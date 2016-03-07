@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Bob Dylan",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "name": "Rick Grimes",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "name": "Carl Grimes",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "name": "Jodie Rohrer",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "name": "Aimee Rohrer",
+        "correct": 0,
+        "incorrect": 0
+    },
+    {
+        "name": "Amelia Eirhart",
+        "correct": 0,
+        "incorrect": 0
+    }
+]

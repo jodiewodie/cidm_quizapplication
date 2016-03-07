@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="QuizApplication">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        
+        <title>Quiz Application</title>        
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    </head>
+    <body>
+        
+        <div class="jumbotron">
+            <h1>Quiz Application</h1>
+            <p>Quizzing application that selects random students and random questions.</p>
+        </div>  
+    
+        <div class="container">
+            <div ng-controller="QuizApplicationController as qac">
+               
+                <p><span class="label label-default">Randomized Student:</span> {{qac.selected_student.name}} - 
+                Correct: {{qac.selected_student.correct}} - Incorrect: {{qac.selected_student.incorrect}}</p>
+                <p><span class="label label-default">Question:</span> {{qac.selected_question.text}}</p>
+                <p><span class="label label-default">Answer:</span> {{qac.selected_question.answer}}</p>
+                <button type="button" class="btn btn-success" ng-click="qac.doCorrect()">Correct</button>
+                <button type="button" class="btn btn-danger" ng-click="qac.doIncorrect()">Incorrect</button>
+                
+            </div>
+        </div>
+        
+        <script src="angular.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>                
+        <script src="app2.js"></script>
+        
+    </body>
+</html>
